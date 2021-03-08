@@ -1,1 +1,110 @@
+.intro {
+    background-image: url(img/3.jpg);
+    background-size: cover;
+    border-bottom-right-radius: 30% ;
+    border-bottom-left-radius: 30% ;
+    min-height: 90vh;
+    border-bottom: thin solid white;
 
+}
+
+/* img {
+    padding: 0;
+    max-width: 25vh;
+} */
+/* .iran {
+    height: 18.8vh;
+    background-image: url(img/iran.jpg);
+    background-size: cover;
+}
+
+.syria {
+    background-image: url(img/syria.jpg);
+    background-size: cover;
+}
+.afghani {
+    background-image: url(img/afghani.jpg);
+    background-size: cover;
+} */
+.bott div {
+    margin: 2rem 0;
+
+    
+
+ 
+}
+.collapse {
+    padding-right: 15rem;
+}
+}
+body {
+    background-color: rgb(201, 11, 11);
+}
+.background {
+    background-image: url(img/food-366875_1920.jpg);
+    min-height: 150vh;
+    
+    background-size: cover;
+}
+
+.iran img {
+    height: 21.2vh;
+    border: thick solid wheat;
+}
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+      max-width: 30vh;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
+}
+  
+.img-hover:hover:after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:30px;
+    height:30px;
+    border:1px solid #000;
+}
+  
+.grayscale {
+  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  filter: brightness(1.10) grayscale(100%); 
+}
+.syria  img{
+    border: thick solid wheat;
+}
+.afghani img{
+    border: thick solid wheat;
+}
+.syria {
+    text-align: center;
+    color: wheat;
+}
+.afghani {
+    color: wheat;
+}
+.iran {
+    color: wheat;
+}
+.fot-log {
+    max-width: 5rem;
+}
+.intro h1 {
+    /* max-width: 60rem; */
+}
