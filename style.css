@@ -3,7 +3,7 @@
     background-size: cover;
     border-bottom-right-radius: 30% ;
     border-bottom-left-radius: 30% ;
-    min-height: 90vh;
+    max-height: 20vh;
     border-bottom: thin solid white;
 
 }
@@ -42,7 +42,7 @@ body {
 }
 .background {
     background-image: url(img/food-366875_1920.jpg);
-    min-height: 150vh;
+    min-height: 100vh;
     
     background-size: cover;
 }
@@ -108,3 +108,59 @@ body {
 .intro h1 {
     /* max-width: 60rem; */
 }
+.carousel-item {
+    height: 71.4vh;
+}
+.carousel-inner img {
+    margin: auto;
+    opacity: 0.9;
+    /* width: 100%; */
+  }
+
+  .carousel-caption {
+      /* font-size: 2rem; */
+      color: orange;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .carousel-caption h5 {
+    font-size: 2.5rem;
+      color: white;
+      border: thin solid none;
+      
+      margin: auto;
+      background-color: #30475e;
+      margin-bottom: 0.5rem;
+      border-radius: 20px;
+  }
+  .carousel-caption p {
+    font-size: 1.5rem;
+      color: white;
+      border: thin solid none;
+      
+      margin: auto;
+      background-color: #30475e;
+      border-radius: 20px;
+      
+  }
+  .btn-sy {
+     background-color: #f05454;
+     border: thin solid #f05454;
+     color: #f05454;
+  }
+
+  .btn-per{
+     background-color: #f05454;
+     border: thin solid #f05454;
+     color: #f05454;
+  }
+
+  .btn-afg {
+     background-color: #f05454;
+     border: thin solid #f05454;
+     color: #f05454;
+  }
+  /* .wrap {
+      width: 40rem;
+      margin: auto;
+  } */
