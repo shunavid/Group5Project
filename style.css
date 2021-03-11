@@ -1,56 +1,8 @@
-.intro {
-    background-image: url(img/3.jpg);
-    background-size: cover;
-    border-bottom-right-radius: 30% ;
-    border-bottom-left-radius: 30% ;
-    max-height: 20vh;
-    border-bottom: thin solid white;
 
+.here {
+  margin-right: 15rem !important;
 }
-
-/* img {
-    padding: 0;
-    max-width: 25vh;
-} */
-/* .iran {
-    height: 18.8vh;
-    background-image: url(img/iran.jpg);
-    background-size: cover;
-}
-
-.syria {
-    background-image: url(img/syria.jpg);
-    background-size: cover;
-}
-.afghani {
-    background-image: url(img/afghani.jpg);
-    background-size: cover;
-} */
-.bott div {
-    margin: 2rem 0;
-
-    
-
- 
-}
-.collapse {
-    padding-right: 15rem;
-}
-}
-body {
-    background-color: rgb(201, 11, 11);
-}
-.background {
-    background-image: url(img/food-366875_1920.jpg);
-    min-height: 100vh;
-    
-    background-size: cover;
-}
-
-.iran img {
-    height: 21.2vh;
-    border: thick solid wheat;
-}
+/* bootstrap carousel css */
 .img-hover img {
     -webkit-transition: all .3s ease; /* Safari and Chrome */
   	-moz-transition: all .3s ease; /* Firefox */
@@ -86,81 +38,52 @@ body {
   -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
   filter: brightness(1.10) grayscale(100%); 
 }
-.syria  img{
-    border: thick solid wheat;
-}
-.afghani img{
-    border: thick solid wheat;
-}
-.syria {
-    text-align: center;
-    color: wheat;
-}
-.afghani {
-    color: wheat;
-}
-.iran {
-    color: wheat;
-}
+
 .fot-log {
     max-width: 5rem;
 }
-.intro h1 {
-    /* max-width: 60rem; */
-}
+
 .carousel-item {
     height: 71.4vh;
 }
 .carousel-inner img {
     margin: auto;
-    opacity: 0.9;
-    /* width: 100%; */
+    opacity: 0.8;
   }
 
+
+      /* text inside te carousel */
+
+
   .carousel-caption {
-      /* font-size: 2rem; */
-      color: orange;
     top: 50%;
     transform: translateY(-50%);
   }
   .carousel-caption h5 {
-    font-size: 2.5rem;
-      color: white;
+      color: #f5c0c0;
       border: thin solid none;
-      
       margin: auto;
       background-color: #30475e;
       margin-bottom: 0.5rem;
       border-radius: 20px;
   }
   .carousel-caption p {
-    font-size: 1.5rem;
-      color: white;
+      color: #f05454;
       border: thin solid none;
-      
       margin: auto;
       background-color: #30475e;
       border-radius: 20px;
       
   }
-  .btn-sy {
-     background-color: #f05454;
-     border: thin solid #f05454;
-     color: #f05454;
+
+
+
+  /* customize button */
+  .btn-secondary {
+    color: #212529 !important;
+    background-color: #f05454 !important;
+    border-color: #f05454 !important;
+
   }
 
-  .btn-per{
-     background-color: #f05454;
-     border: thin solid #f05454;
-     color: #f05454;
-  }
-
-  .btn-afg {
-     background-color: #f05454;
-     border: thin solid #f05454;
-     color: #f05454;
-  }
-  /* .wrap {
-      width: 40rem;
-      margin: auto;
-  } */
+ 
