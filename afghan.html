@@ -15,47 +15,36 @@
 </head>
 <body>
 
-    
-     <div class="perso-row">
-   <div class="food-intro">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <!-- Brand/logo -->
-        <script>
-          // When the user scrolls down 20px from the top of the document, slide down the navbar
-          window.onscroll = function() {scrollFunction()};
-          
-          function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("navbar").style.top = "0";
-            } else {
-              document.getElementById("navbar").style.top = "-50px";
-            }
-          }
-          </script>
-        <a class="navbar-brand" href="#">
-          <img src="./images/hqdefault.jpg" alt="logo" style="width: 200px;height: 80px;">
-        </a>
-    <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" >Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="syrian.html" >Syrian Foods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="afghan.html">Afghan Foods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="persian.html">Persian Foods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-        </ul>
-       
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> 
+          <img class="w-25" src="img/logo.png" alt="logo">  
+          orianties.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+             aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" 
+              href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Syrian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Persian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Afghan</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
       <div class="menu">
         <h4>Kabuli Palaw</h4>
         <h3>Description</h3>
