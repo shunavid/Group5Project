@@ -109,11 +109,10 @@
 
   #parallax-image {
     background-image: url(img/kibeh.jpg);
-    height: 60vh;
+    height: 40vh;
     background-size: cover;
- 
-
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
  .h{
    color: black;
@@ -122,21 +121,19 @@
  
  #parallax-image1 {
   background-image: url(img/friekeh.jpg);
-  height: 60vh;
+  height: 40vh;
   background-size: cover;
- 
-
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 
 #parallax-image2 {
   background-image: url(img/lahmeh.jpg);
-  height: 60vh;
+  height: 40vh;
   background-size: cover;
-
-
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 
