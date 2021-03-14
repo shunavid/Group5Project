@@ -9,61 +9,100 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>About</title>
+    <style>
+   
+    </style>
 </head>
 <body>
    <section>
-    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-          <img src="./food-culturehead.jpg" alt="logo" style="width: 150px;height: 40px;">
-        </a>
-    <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="syrian.html">Syrian Foods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="afghan.html">Afghan Foods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="persian.html">Persian Foods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-        </ul>
-        </nav>
-      
-      <div class="row">
-        <div class="col-xs-1 col-md-4">
-          <h1 class="text-center">About this Website:</h1>
-          <h2>Created by:</h2>
-          <ul>
-            <li>
-              Shukrullah Navid 
+     <!-- Navigation bar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> 
+          <img class="w-25" src="./img/logo.png" alt="logo">  
+          orianties.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+             aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" 
+              href="index.html" style="font-size: 20px;">Home</a>
             </li>
-            <li>
-              Ahmad Saqer 
+            <li class="nav-item">
+              <a class="nav-link" href="syrian.html" style="font-size: 20px;">Syrian</a>
             </li>
-            <li>
-              Aydin 
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="font-size: 20px;">Persian</a>
             </li>
-          </ul>
-          <h2>Tools used to Developed:</h2>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Bootstrap +4</li>
-            <li>
-              Bulwa 
+            <li class="nav-item">
+              <a class="nav-link" href="afghan.html" style="font-size: 20px;">Afghan</a>
             </li>
-            <li>Foundation</li>
-            <li>Atiny bit of JavaScript</li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" style="color: black;font-size: 20px;">About</a>
+            </li>
           </ul>
         </div>
+      </div>
+    </nav>
+     
         </section>
+
+       
+        <main class="container mt-5 mb-5">
+          <div class="row">
+            <div class="col-xs-1 col-md-4">
+              <h1 class="text-lg-start" style="font-family: sans-serif;">About this app:</h1>
+              <h2>Created by:</h2>
+              <ul>
+                <li>
+                  Shukrullah Navid
+                </li>
+                <li>
+                  Ahmad Sager
+                </li>
+                <li>
+                Aydin 
+                </li>
+              </ul>
+              <h2>Tools Used to Developed:</h2>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>
+                  Bulwa
+                </li>
+                <li>A tiny bit of JavaScript</li>
+                <li>Foundation</li>
+              </ul>
+             
+              
+            </div>
+            <div class="col-xs-1 col-md-8">
+              <img src="./img/Pavlova.jpg" 
+              style="height: 500px; width: 800px;"
+              alt="About" id="about" class="mb-5" />
+            </div>
+          </div>
+        </main>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); height: 100px;">
+        <img src="./img/logo.png" alt="logo" class="fot-log" style="height: 80px; border: 1px;"> © 2020 Copyright: Group 5 #13
+      </div>
+      <!-- Copyright -->
+    </footer>  
 </body>
 </html>

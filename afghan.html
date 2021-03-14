@@ -1,169 +1,897 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>middle east food culture</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    
+    <script src="http://code.jauery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Kabuli Palaw</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 410px;
+      height: 400px;
+    }
+    </style>
+
+
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> 
+        <img class="w-25" src="img/logo.png" alt="logo">  
+        orianties.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+           aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="true"  href="index.html" style="font-size: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="syrian.html" style="font-size: 20px;">Syrian</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-size: 20px;">Persian</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="true" href="syrian.html" style="color: black; font-size: 20px;">Afghan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"style="font-size: 20px;">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
 
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"> 
-          <img class="w-25 " src="img/logo.png" alt="logo">  
-          <p class="logo"> Orianties.</p></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-             aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center here" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" 
-              href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="syrian.html">Syrian</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Persian</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="afghan.html">Afghan</a>
-            </li>
-          </ul>
+  <main class="container mt-5">
+    <!--Your code should go within this container, Lucas-->
+    <h1 class="text-uppercase text-secondary"
+     style="font-family: 'Times New Roman', Times, serif;">Food Menu</h1>
+    <div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            style="font-size: 20px;"
+            id="kabuli-Palaw-tab"
+            data-toggle="tab"
+            href="#kabuli-Palaw"
+            role="tab"
+            aria-controls="kabuli-Palaw"
+            aria-selected="true"
+            >Kabuli Palaw</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            style="font-size: 20px;"
+            id="kabab-tab"
+            data-toggle="tab"
+            href="#kabab"
+            role="tab"
+            aria-controls="kabab"
+            aria-selected="false"
+            >Chopan Kebab</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            style="font-size: 20px;"
+            id="manto-tab"
+            data-toggle="tab"
+            href="#manto"
+            role="tab"
+            aria-controls="emanto"
+            aria-selected="false"
+            >Manto Ashak</a
+          >
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="kabuli-Palaw" role="tabpanel" aria-labelledby="kabuli-Palaw-tab">
+        <div
+        class="tab-pane fade show active"
+        id="kabuli-Palaw"
+        role="tabpanel"
+        aria-labelledby="kabuli-Palaw-tab"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="mt-6 mx-auto text-center" style="width: 240px; color: #3FE0D0; font-size: 30px;
+               margin-bottom: 20px; border-bottom: 2px solid #B0DFE5;
+                padding-bottom: 20px; padding-top: 30px;">
+                  Kabuli Palaw  
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="mx-auto text-center" style="font-size: 20px;" >
+                "Kabuli palaw is a staple at any Afghan gathering," says Durkhanai Ayubi.
+                 "Rice is very precious for Afghans - it forms the centrepiece of the meal,
+                  and all the other food is presented around it. The test of a well-cooked 
+                  rice dish is that the grains do not stick together and remain as elongated as possible.
+                   Many brides-to-be (and maybe even grooms these days) are judged on their ability to
+                  cook this dish well. This recipe is from my mother." Begin it a day ahead to soak the rice.
+                  Many brides-to-be (and maybe even grooms these days) are judged on their ability to
+                  cook this dish well. This recipe is from my mother." Begin it a day ahead to soak the rice.
+              </p>
+              <br /><br />
+            </div>
+          </div>
+
+
+          
+
+
+
+          <div class="row mb-5">
+            <div class="col-sm col-md-5">
+
+
+
+              <div class="container mt-4">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/palaw1.jpg" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/palaw2.jpg" alt="Chicago" >
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/palaw3.jpg" alt="New York">
+                </div>
+              </div>
+              
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+            
+            </div>
+          </div>
+             
+           
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-xs-1 col-lg-6">
+              <h5 class="head-table" style="margin-left: 200px; padding-bottom: 20px; color: #3fe0d0; font-size: 30px;">What We Need?</h5>
+              <table class="table table-striped" style="margin-left: 200px;">
+       
+                <thead>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Ingredients</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1 lb</th>
+                    <td>Ribeye steak trimmed and thinly sliced</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1/2 tsp</th>
+                    <td>Sea salt or to taste</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1/2 tsp</th>
+                    <td>Black pepper or to taste</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>sweet onion (large), diced</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>slices provolone cheese mild (not aged provolone)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Hoagie Rolls sliced 3/4 through</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2 Tbsp</th>
+                    <td>unsalted butter softened</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1 clove</th>
+                    <td>garlic, pressed</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2-4 Tbsp</th>
+                    <td>mayonnaise or to taste</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+           
+  
+              
+          
         </div>
       </div>
-    </nav>
-          <!-- nav ends here -->
 
 
-      <div class="menu">
-        <h4>Kabuli Palaw</h4>
-        <h3>Description</h3>
-        
-        <p>This ethereal mixture of rice and lamb, redolent of sweet and warming spices, is
-           the national dish of Afghanistan. Kabuli pulao takes its name from Kabul, the
-            capital of that land-locked Central Asian nation.
 
-          Kabuli pulao is special occasion food in Afghanistan. 
-          "Pulao" is
-           a type of rice dish made with a special, two-stepped
-            cooking process for the rice that is unmatched in yielding
-             separate, fluffy grains with excellent texture.
-          
-          While each step in the recipe is not particularly difficult,
-           the dish does require several steps to complete. First you 
-           simmer the meat, then you caramelize the carrots and parcooke.
-            These steps can be completed ahead of time. Then you can just layer the three
-             components together and finish the cooking on your stovetop.</p>
-       <div class="image">
-             <img class="image-img" src="./images/Kabulipalaw.jpg" alt="palaw">
-            <div class="image-overlay">
-           <div class="image-title">Qabuli Palaw</div>
-           <p class="image-description">Here the Lunch is Ready!</p>
-            </div>
-            </div>
-        <div class="container">
-          <h2>Ingredients for Qabuli Palaw</h2>
-                 
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Amount</th>
-                <th>Ingredients</th>
-               
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>3cups</td>
-                <td>Basmati rice</td>
-                
-              </tr>
-              <tr>
-                <td>1/2 cup</td>
-                <td>Oil</td>
-               
-              </tr>
-              <tr>
-                <td>1 stick</td>
-                <td>Cinnmon</td>
-              </tr>
-              <tr>
-                <td>8 to 10</td>
-                <td>Cardamom pods</td>
-              </tr>
-              <tr>
-                <td>2 to 3 cups</td>
-                <td>Stock of water</td>
-              </tr>
-              <tr>
-                <td>1/4 cup</td>
-                <td>Sugar</td>
-              </tr>
-              <tr>
-                <td>1/2 cup</td>
-                <td>Raisins, soaked in water and drained</td>
-              </tr>
-            </tbody>
-            
-          </table>
-          <div class="container mt-3">
-            <!-- Button to Open the Modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-              Click Here!
-            </button>
-          
-            <!-- The Modal -->
-            <div class="modal fade" id="myModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Here is the Link:</h4>
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                  </div>
-                  
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    https://www.w3schools.com/
-                  </div>
-                  
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-                  
+
+
+
+
+      <h2 style="text-align: center; color: #3FE0D0; padding-bottom: 30px; font-family: 'Times New Roman', Times, serif;">Famous Food Around the World!</h2>
+
+     
+    
+      <div class="container pt-5">
+        <!-- ROW -->
+        <div class="row justify-content-start">
+    
+          <!-- CARD DINNER-->
+          <div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+                <div class="card-img">
+                  <a href="#" data-toggle="tooltip" title="Hasenpfeffer(Rabbit Stew)">
+                    <img src="./img/Hasenpfeffer(Rabbit Stew).jpg" alt="Oven-baked Chicken Breasts" class="w-100">
+                  </a>
                 </div>
+                <h6 style="text-align: center;">Germany</h6>
+        </div>   
+
+
+
+        <div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+          <div class="card-img">
+            <a href="#" data-toggle="tooltip" title="French Salade-Niçoise">
+              <img src="./img/Salade-Niçoise.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+            </a>
+          </div>
+          <h6 style="text-align: center;">France</h6>
+        </div>
+
+    <div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+      <div class="card-img">
+        <a href="#" data-toggle="tooltip" title="Italy Lasagna">
+          <img src="./img/Italy lasagna.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+        </a>
+      </div>
+      <h6 style="text-align: center;">Italy</h6>
+</div>
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="Canada Poutine">
+      <img src="./img/Poutine.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">Canada</h6>
+</div>
+
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="England Steak and Kidney Pie">
+      <img src="./img/steak and kidney pie.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">England</h6>
+</div>
+
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="USA Hamburger">
+      <img src="./img/hamburger.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">United States of America</h6>
+</div>
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="Pavlova">
+      <img src="./img/Pavlova.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">Australia</h6>
+</div>
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="Kebap">
+      <img src="./img/Sis-kebab-1.jpg.webp" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">Turkey</h6>
+</div>
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="Taramasalata">
+      <img src="./img/taramasalata-401c253.webp" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">Greece</h6>
+</div>
+
+
+
+
+
+
+    
+    
+        </div>
+      
+      </div>
+    
+          <!-- CARD END -->
+    
+         
+
+        
+        
+
+
+    
+    </div>
+      </div>
+
+        
+
+
+
+
+
+      <div class="tab-pane fade" id="kabab" role="tabpanel" aria-labelledby="kabab-tab">
+        <div
+        class="tab-pane fade show active"
+        id="kabuli-Palaw"
+        role="tabpanel"
+        aria-labelledby="kabuli-Palaw-tab"
+      >
+      <div class="container">
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            <h3 class="mt-5 mx-auto text-center" style="width: 240px; color: #3FE0D0; font-size: 30px;
+            margin-bottom: 20px; border-bottom: 2px solid #B0DFE5;
+             padding-bottom: 20px; padding-top: 30px;">
+              Chopan Kebab
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="mx-auto text-center" style="font-size: 20px;">
+              A specialty of Afghan cuisine, chopan kabob is made with lamb meat roasted over a traditional Afghan 
+              charcoal brazier called mankal. It was named after sheep herders (chopan is a Pashto word for shepherd) 
+              who used to rub chunks of lamb with plenty of salt, skewer them on twigs or small branches, and roast the
+              meat over a fire while watching their flocks.
+
+              Today, chopan kabob can be found in numerous kebab street stalls called dukan-e-kebabi. It is often made with
+              jijeq - pieces of fat from the sheep's tail which are added to lamb skewers for extra flavor, while the meat is
+               sometimes pre-marinated.
+
+              The delicious Afghan lamb skewers are seasoned with sumac or gard-e-ghooreh, sour grape powder, and commonly served
+               with naan bread.
+            </p>
+            <br /><br />
+          </div>
+        </div>
+
+
+
+
+        <div class="row mb-5">
+          <div class="col-sm col-md-5">
+
+
+            <div class="container mt-4">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+                  <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/kebab1.jpg" alt="Los Angeles">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/kebab2.jpg" alt="Chicago" >
+              </div>
+              <div class="carousel-item">
+                <img src="./img/chopankebab.jpg" alt="New York">
               </div>
             </div>
             
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
           
+          </div>
+        </div>
+
+
+          <div class="col-xs-1 col-lg-6">
+            <h5 class="head-table" style="margin-left: 200px; padding-bottom: 20px; color: #3fe0d0; font-size: 30px;">What We Need?</h5>
+            <table class="table table-striped" style="margin-left: 200px;">
+     
+              <thead>
+                <th scope="col">Amount</th>
+                <th scope="col">Ingredients</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">3kg Lamb</th>
+                  <td>lamb shoulder and Ribs with bone</td>
+                </tr>
+                <tr>
+                  <th scope="row">1tbsp </th>
+                  <td>Garlic Paste</td>
+                </tr>
+                <tr>
+                  <th scope="row">1tsp</th>
+                  <td>Ginger Paste</td>
+                </tr>
+                <tr>
+                  <th scope="row">1-1/4 tbsp</th>
+                  <td>Salt</td>
+                </tr>
+                <tr>
+                  <th scope="row">100gm</th>
+                  <td>Yogurt</td>
+                </tr>
+                <tr>
+                  <th scope="row">1/2tsp</th>
+                  <td>White Pepper</td>
+                </tr>
+                <tr>
+                  <th scope="row">2 Tbsp</th>
+                  <td>unsalted butter softened</td>
+                </tr>
+                <tr>
+                  <th scope="row">1 clove</th>
+                  <td>Garlic, Pressed</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+         
+
+             
+
+        
+      </div>
+    </div>
+
+
+      <h2 style="text-align: center; color: #3FE0D0; padding-bottom: 50px;"> Gallery of Different Types of Food!</h2>
+     
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="./img/Hasenpfeffer(Rabbit Stew).jpg" target="_blank">
+                <img src="./img/Hasenpfeffer(Rabbit Stew).jpg" alt="Lights" style="width:100%">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="./img/Italy lasagna.jpg" target="_blank">
+                <img src="./img/Italy lasagna.jpg" alt="Nature" style="width:100%; height: 230px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="./img/kebab1.jpg" target="_blank">
+                <img src="./img/kebab1.jpg" alt="Fjords" style="width:100%">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="./img/Pavlova.jpg" target="_blank">
+                <img src="./img/Pavlova.jpg" alt="Lights" style="width:100%; padding-top: 20px;padding-bottom: 20px; height: 250px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="./img/steak and kidney pie.jpg" target="_blank">
+                <img src="./img/steak and kidney pie.jpg" alt="Nature" style="width:100%;padding-top: 20px; height: 250px; padding-bottom: 20px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="./img/ashak1.jpg" target="_blank">
+                <img src="img/ashak1.jpg" alt="Fjords" style="width:100%; padding-top: 20px; height: 250px; padding-bottom: 20px;">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="sidebar-container mt3">
-       <nav class="sidebar">
-        <div class="text">Food Menu</div>
-        <ul class="unor-list">
-          <li><a href="#">Kabuli Palaw</a></li>
-          <li><a href="#">Chopan Kabab</a></li>
-          <li><a href="#">Shahi Kabab</a></li>
-          <li><a href="#">Manto</a></li>
-          <li><a href="#">Salad</a></li>
-        </ul>
-       </nav>
+
+
+    </div>
       </div>
+
+
+
+
+
+
+
+
+
+      <div class="tab-pane fade" id="manto" role="tabpanel" aria-labelledby="manto-tab">
+        <div
+        class="tab-pane fade show active"
+        id="kabuli-Palaw"
+        role="tabpanel"
+        aria-labelledby="kabuli-Palaw-tab"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="mt-5 mx-auto text-center" style="width: 240px; color: #3FE0D0; font-size: 30px;
+              margin-bottom: 20px; border-bottom: 2px solid #B0DFE5;
+               padding-bottom: 20px; padding-top: 30px;">
+                Manto Ashak
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="mx-auto text-center" style="font-size: 20px;" >
+                Afghan mantu is one of the most popular dishes from Afghanistan. 
+                It is a meat- (usually beef or lamb) stuffed dumpling that is steamed
+                 in a multilayer steamer. Mantu is served on special occasions and 
+                 often during large gatherings. In Afghanistan, cooked mantu is often sold 
+                 at markets and busy streets. Mantu can be served as both a main or side dish.
+
+                 Afghan mantu dates back to the time of the Turkic and Mongol horsemen of Central Asia. 
+                 It is believed that the horsemen carried frozen mantu during the cold winters while
+                  traveling long distances and then boiled them over camp fires for supper.
+              </p>
+              <br /><br />
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="row mb-5">
+            <div class="col-sm col-md-5">
+
+
+
+              <div class="container mt-4">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/ashak.jpg" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/mantu.jpg" alt="Chicago" >
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/ashak1.jpg" alt="New York">
+                </div>
+              </div>
+              
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+            
+            </div>
+          </div>
+             
+
+
+
+
+
+            <div class="col-xs-1 col-lg-6">
+              <h5 class="head-table" style="margin-left: 200px; padding-bottom: 20px; color: #3fe0d0; font-size: 30px;">What We Need?</h5>
+              <table class="table table-striped" style="margin-left: 200px; padding-bottom: 50px;">
+       
+                <thead>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Ingredients</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2 cups</th>
+                    <td>Ground beef or Lamb</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2/3 cup</th>
+                    <td>onions, chopped</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3 Cloves</th>
+                    <td>Garlic, minced</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1/2 tsp</th>
+                    <td>Ground black pepper</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1/2 tsp</th>
+                    <td>turmeric powder</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1 tsp</th>
+                    <td>Ground coriander</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2 tsp</th>
+                    <td>Vegetable Oil</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1 clove</th>
+                    <td>garlic, pressed</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1/2 Tsp</th>
+                    <td>Salt to taste</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1 Package</th>
+                    <td>Egg roll or wonton wraps</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+           
+  
+               
+          </div>
+            
+          </div>
+
+
+            <h2 style="text-align: center; color: #3FE0D0; padding-bottom: 30px; font-family: 'Times New Roman', Times, serif;">Famous Food Around the World!</h2>
+      <div class="container pt-5">
+        <!-- ROW -->
+        <div class="row justify-content-start">
+    
+          <!-- CARD DINNER-->
+          <div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+                <div class="card-img">
+                  <a href="#" data-toggle="tooltip" title="Hasenpfeffer(Rabbit Stew)">
+                    <img src="./img/Hasenpfeffer(Rabbit Stew).jpg" alt="Oven-baked Chicken Breasts" class="w-100">
+                  </a>
+                </div>
+                <h6 style="text-align: center;">Germany</h6>
+        </div>   
+
+
+        <div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+          <div class="card-img">
+            <a href="#" data-toggle="tooltip" title="French Salad Nicois">
+              <img src="./img/Salade-Niçoise.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+            </a>
+          </div>
+          <h6 style="text-align: center;">France</h6>
+        </div>
+
+    <div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+      <div class="card-img">
+        <a href="#" data-toggle="tooltip" title="Italy Lasagna">
+          <img src="./img/Italy lasagna.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+        </a>
       </div>
+      <h6 style="text-align: center;">Italy</h6>
+</div>
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="Canada Poutine">
+      <img src="./img/Poutine.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">Canada</h6>
+</div>
+
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="England Steak and Kidney Pie">
+      <img src="./img/steak and kidney pie.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">England</h6>
+</div>
+
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="USA Hamburger">
+      <img src="./img/hamburger.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">United States of America</h6>
+</div>
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="Pavlova">
+      <img src="./img/Pavlova.jpg" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">Australia</h6>
+</div>
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="Kebap">
+      <img src="./img/Sis-kebab-1.jpg.webp" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">Turkey</h6>
+</div>
+
+
+
+
+
+<div data-aos="fade-up" class="col-lg-4 col-md-6 mb-4">
+  <div class="card-img">
+    <a href="#" data-toggle="tooltip" title="Taramasalata">
+      <img src="./img/taramasalata-401c253.webp" alt="Oven-baked Chicken Breasts" class="w-100" style="height: 228px;">
+    </a>
+  </div>
+  <h6 style="text-align: center;">Greece</h6>
+</div>
+
+
+
+
+
+
+    
+    
+        </div>
+      
+      </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+     
+    
+
+
+    
+  </main>
+  
+  <footer class="bg-light text-center text-lg-start">
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); height: 100px;">
+      <img src="img/logo.png" alt="logo" class="fot-log" style="height: 80px;"> © 2020 Copyright: Group 5 #13
+    </div>
+    <!-- Copyright -->
+  </footer>
+      
+   <script src="js/bootstrap.js"></script>
+    
 </body>
 </html>
