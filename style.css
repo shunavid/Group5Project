@@ -109,19 +109,26 @@
 
   #parallax-image {
     background-image: url(img/kibeh.jpg);
-    height: 40vh;
+    height: 60vh;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
   }
  .h{
-   color: black;
-   font-family: Cosmic Sans MS, Cosmic Sans, Cursive;
+  color: #f5c0c0;
+  border: thin solid none;
+  margin: auto;
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: #30475e;
+  margin-bottom: 0.5rem;
+  border-radius: 20px;
+
  }
  
  #parallax-image1 {
   background-image: url(img/friekeh.jpg);
-  height: 40vh;
+  height: 60vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -130,11 +137,22 @@
 
 #parallax-image2 {
   background-image: url(img/lahmeh.jpg);
-  height: 40vh;
+  height: 60vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
+.kib {
+  width: 30rem;
+}
+
+.dis {
+  border-left: thick solid gray;
+}
+
+.ing {
+  border-left: thick solid gray;
+}
 
  
