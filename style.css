@@ -1,6 +1,6 @@
 * {
   font-family: Cosmic Sans MS, Cosmic Sans, Cursive;
-  font-size: lrge;
+  font-size: 20px;
 }
 .here {
   margin-right: 15rem !important;
@@ -153,6 +153,10 @@
 
 .ing {
   border-left: thick solid gray;
+  padding-top: 0.15rem;
 }
 
+.ing-2 {
+  padding-bottom: rem;
+}
  
