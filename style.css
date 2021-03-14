@@ -86,9 +86,7 @@
       border-radius: 20px;
       
   }
-  .carousel {
-
-  }
+ 
 
 
 
@@ -160,3 +158,49 @@
   padding-bottom: rem;
 }
  
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-img:hover {
+ z-index: 1; 
+ transform: scale(1.25);
+ box-shadow: 0 25px 40px rgba(0, 0, 0, .5) ;
+}
+
+
+.icon-image {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.icon-image img{
+  position: absolute;
+  height: 95%;
+  width: 20%;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.hover-image {
+  position: absolute;
+  height: 230px;
+  width: 70%;
+
+}
+.hover-image img{
+  border-radius: 25px;
+}
+
+
+
+
